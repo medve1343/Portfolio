@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Gergo Medveczky" />
+    <meta name="description" content="WDD 230 - Web Frontend Development Gergo Medveczky course assignment portal" />
+    <!-- <meta
+      name="description"
+      content="WDD230 - Web Frontend Development Gergo Medveczky W01 Team Activity: Course Home Page Development."
+    /> -->
+    <meta property="og:type" content="website">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Budapest Chamber of Commerce" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/medve1343/wdd230/main/images/Budapest.jpg"
+    />
+    <meta property="og:url" content="https://medve1343.github.io/wdd230/" />
+
+    <link rel="icon" href="images/favicon.ico" />
+    
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>"Gergo Medveczky - WDD 230 - Web Frontend Development"</title>
+  </head>
+
+  <body>
+    <header>
+      <img id="motorcycle" src="images/me.webp" alt="me on a motorcycle" />
+      <h1>Gergo Medveczky</h1>
+      <button id="dark-mode">Dark Mode🕶️</button>
+    </header>
+
+    <nav>
+      <button id="menu"></button>
+
+      <ul class="navigation">
+        <li><a href="index.html" title="Home">Home</a></li>
+        <li>
+          <a href="contactme.html" title="Chamber" class="active"
+            >Contact me</a
+          >
+        </li>
+        <li>
+          <a href="week01/chamber-site-plan.html" title="Site Plan"
+            >Download Resume</a
+          >
+        </li>
+        <li><a href="form.html" title="Form">About Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- <nav>
+      <a href="#">Home</a>
+      <a href="./chamber/index.html">Chamber</a>
+      <a href="./week01/chamber-site-plan.html">Site Plan</a>
+      <a href="#">Form</a>
+    </nav> -->
+    <main id="aboutme">
+      <div class="grid-item">
+        <img id="wedding" src="images/wedding.jpg" alt="Gergo & Ellie" />
+      </div>
+      <div class="grid-item">
+
+        <p>
+          Hello there! <br>
+          I was born and raised in Budapest, Hungary. 
+          I grew up with a deep passion for computers and rowing.
+          I still remember the first computer my family got from a friend 
+          because we could not afford one. My father had to work 7 days a week to provide for us. 
+          Screen time was a family time for my 4 brothers and I. We were always so excited to discover the secrets of computers 
+          which developed in me a life-long passion for software. <br>
+          I moved to Rexburg, Idaho to study Software-Engineering at BYU-Idaho and I have been falling in love with the nature and wild-life around here.
+          I like to spend time in the mountains in every season whether I am on a pair of skis or on feet. I also started attending country dances where I met 
+          the love of my life and we got married after 9 months of dating.
+        </p>
+      </div>
+      
+      
+    </main>
+    <footer>
+      <p>
+        <span id="copyright"></span>
+      </p>
+      <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
+      <p>Gergo Medveczky</p>
+      <p id="last-modified"></p>
+    </footer>
+    <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/visitCount.js"></script>
+    <script src="scripts/download.js"></script>
+  </body>
+</html>

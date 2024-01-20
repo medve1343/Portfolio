@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Gergo Medveczky" />
+    <meta name="description" content="WDD230 - Chamber Home Page." />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta property="og:title" content="Budapest city Chamber of Commerce" />
+    <meta property="og:type" content="website">
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/medve1343/wdd230/main/images/Budapest.jpg"
+    />
+    <meta property="og:url" content="https://medve1343.github.io/wdd230/" />
+
+    <link rel="icon" href="images/favicon.ico" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    /> -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/base.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+    <title>"Gergo Medveczky - Budapest Chamber of Commerce"</title>
+  </head>
+  <body>
+    <header>
+      <h1 id="cityName">Budapest city Chamber of Commerce</h1>
+      <img id="facebook" src="images/facebook.webp" alt="facebook" />
+      <img id="linkedin" src="images/linkedin.webp" alt="linkedin" />
+      <img id="instagram" src="images/instagram.webp" alt="instagram" />
+    </header>
+    <div class="banner">
+      <button id="cancelBanner" type="button">❌</button>
+      <h2>We would like to invite you to attend the chamber of commerce meet and greet on Wednesdat at 7:00pm</h2>
+    
+  </div>
+    <nav>
+      <button id="menu"></button>
+      <button id="join" type="button" style="text-decoration:none" onclick="window.location.href='join.html';">
+        Join
+      </button>
+      
+      <ul class="navigation">
+        <li><a href="../index.html" title="Home">Home</a></li>
+        <li><a href="discover.html" title="Discover" class="active">Discover</a></li>
+        <li><a href="directory.html" title="Directory">Directory</a></li>
+        <li><a href="join.html" title="Join">Join</a></li>
+      </ul>
+    </nav>
+
+    <main>
+
+      <img id="budapest_img" src="images/Budapest.webp" alt="Budapest" />
+      <section class="card">
+        <h3>Current Event(s)</h3>
+        <p id="current_event">
+          Join our Annual Fair 🍹on January 1st!
+        </p>
+      </section>
+
+
+      <section class="card">
+        <h3>Informtaion</h3>
+        <p>Budapest, Hungary</p>
+        <!-- <p> -->
+          <figure>
+            <img id="weather-icon" src="#" alt="weather-icon" />
+            <span id="current-temp"></span>
+
+            <figcaption></figcaption>
+          </figure>
+          <p id="firstDay"></p>
+          <p id="secondDay"></p>
+          <p id="thirdDay"></p>
+        <!-- </p> -->
+        <p>Page Visits: 15</p>
+      </section>
+      <!-- <section class="card">
+        <h3>Informtaion</h3>
+        <p>Budapest, Hungary</p>
+        <p>50 &deg;C - Sunshine</p>
+        <p>Page Visits: 15</p>
+      </section> -->
+
+      <section class="card middle">
+        <h3>Spotlights</h3>
+        <article class="spotLightsArticle"></article>
+      </section>
+    </main>
+    <footer>
+
+      <section class="symbol">
+        <h3>Thank you :)</h3>
+        <img
+          id="hun_symbol"
+          src="images/hun_symbol.webp"
+          alt="hungarian symbol"
+        />
+        <p>
+          <span id="copyright"></span>
+        </p>
+
+        <p>Gergo Medveczky</p>
+        <p>WDD-230</p>
+      </section>
+      <section class="contact">
+        <h3>Contact Information</h3>
+        <p>Phone</p>
+        <p>+1(208)405-3533</p>
+        <p id="last-modified"></p>
+      </section>
+    </footer>
+    <script src="scripts/getChamberWeather.js"></script>
+    <script src="../scripts/getDates.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/cancelBanner.js"></script>
+    <script src="scripts/getSpotlights.js"></script>
+    <!-- <script src="scripts/getWelcome_Message.js"></script> -->
+  </body>
+</html>
